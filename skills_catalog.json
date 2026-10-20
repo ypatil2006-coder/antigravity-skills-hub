@@ -13,6 +13,80 @@
         "path": "/home/yash/.agents/skills/blender/SKILL.md"
       },
       {
+        "name": "brag",
+        "command": "/brag",
+        "desc": "Turn the current project website into a short, polished, shareable launch video using Hyperframes. Use when someone says \\\"/brag\\\", \\\"let's brag about this\\\", \\\"make a launch video\\\", \\\"turn this into a video\\\", or wants to share what they built. Reads the project code directly \u2014 no live URL or screenshots needed.",
+        "tags": [
+          "brag",
+          "skill"
+        ],
+        "path": "/home/yash/.agents/skills/brag/SKILL.md"
+      },
+      {
+        "name": "dart-use-pattern-matching",
+        "command": "/dart-use-pattern-matching",
+        "desc": "Applies Dart 3 pattern matching, switch expressions, and destructuring idiomatically to validate data schemas, handle algebraic data types, and decompose control flow. Use when refactoring complex if-else chains, parsing polymorphic JSON or API responses, destructuring Lists, URI/path segments, String.split() tokens, Records, or Maps, or enforcing exhaustiveness on sealed classes. Don't use for simple boolean conditions, single-variable type promotion (use `is`), or basic collection filtering.",
+        "tags": [
+          "dart",
+          "use",
+          "pattern",
+          "matching",
+          "skill"
+        ],
+        "path": "/home/yash/.gemini/config/plugins/flutter/skills/dart-use-pattern-matching/SKILL.md"
+      },
+      {
+        "name": "finding-google-skills",
+        "command": "/finding-google-skills",
+        "desc": "Google platform decision and setup guidance, loaded on demand from Google's skill catalog. Use when a developer is choosing or setting up part of their stack, such as where to run a service, a database, storage, messaging, authentication, analytics, ads, or AI model serving, and a Google product is a reasonable candidate - whether or not a vendor is named - or when a request names a Google product or API. Brings in the matching Google skill so the answer can weigh Google options, their trade-offs, and when they are not the right fit. Skip when the stack is already settled on another provider and no Google product is named, or the task involves no platform choice.",
+        "tags": [
+          "finding",
+          "google",
+          "skills",
+          "skill"
+        ],
+        "path": "/home/yash/.gemini/config/plugins/google-cloud-developer/skills/finding-google-skills/SKILL.md"
+      },
+      {
+        "name": "flutter-add-widget-test",
+        "command": "/flutter-add-widget-test",
+        "desc": "Implement a component-level test using `WidgetTester` to verify UI rendering and user interactions (tapping, scrolling, entering text). Use when validating that a specific widget displays correct data and responds to events as expected.",
+        "tags": [
+          "flutter",
+          "add",
+          "widget",
+          "test",
+          "skill"
+        ],
+        "path": "/home/yash/.gemini/config/plugins/flutter/skills/flutter-add-widget-test/SKILL.md"
+      },
+      {
+        "name": "flutter-fix-layout-issues",
+        "command": "/flutter-fix-layout-issues",
+        "desc": "Fixes Flutter layout errors (overflows, unbounded constraints) using Dart and Flutter MCP tools. Use when addressing \\\"RenderFlex overflowed\\\", \\\"Vertical viewport was given unbounded height\\\", or similar layout issues.",
+        "tags": [
+          "flutter",
+          "fix",
+          "layout",
+          "issues",
+          "skill"
+        ],
+        "path": "/home/yash/.gemini/config/plugins/flutter/skills/flutter-fix-layout-issues/SKILL.md"
+      },
+      {
+        "name": "flutter-implement-json-serialization",
+        "command": "/flutter-implement-json-serialization",
+        "desc": "Create model classes with `fromJson` and `toJson` methods using `dart:convert`. Use when manually mapping JSON keys to class properties for simple data structures.",
+        "tags": [
+          "flutter",
+          "implement",
+          "json",
+          "serialization",
+          "skill"
+        ],
+        "path": "/home/yash/.gemini/config/plugins/flutter/skills/flutter-implement-json-serialization/SKILL.md"
+      },
+      {
         "name": "generative_ui",
         "command": "/generative_ui",
         "desc": "How to render rich interactive HTML widgets inline in the chat or as standalone artifacts. Use this skill when you want to show the user diagrams, data visualizations, interactive controls, educational walkthroughs, or any rich visual content beyond plain text and markdown.",
@@ -35,7 +109,7 @@
       {
         "name": "modern-web-guidance",
         "command": "/modern-web-guidance",
-        "desc": "Search tool for modern web development best practices. MANDATORY: Execute FIRST for all HTML/CSS and clientside JS tasks. Do NOT skip \u2014 web APIs evolve rapidly and training weights contain obsolete patterns. Trigger immediately for: - UI/Layout: Modals, dialogs, popovers, Glassmorphism/backdrop-filters, anchor positioning, container queries, `:has()`, `:user-valid`. - Scroll/Motion: View Transitions, Scroll-driven animations, scroll parallax/reveals. - Performance: CWV (LCP, INP), content-visibility, Fetch Priority, image optimization. - System/APIs: Local filesystem access, WebUSB, WebSockets sync, WebAssembly widgets. - Frameworks: Adapting layout/styles in React, Vue, Angular. - General Frontend: Forms, autofill, advanced inputs, custom scrollbars, modern component states, etc. DO NOT trigger for: - Backend: Database SQL, ORMs, Express API routes. - Pipelines: CI/CD deployment, Docker, Actions. - Generic: Local scripts (Python/Go tools), ESLint, Git.",
+        "desc": "Search tool for modern web development best practices. MANDATORY: Execute FIRST for all HTML/CSS and clientside JS tasks. Do NOT skip \u2014 web APIs evolve rapidly and training weights contain obsolete patterns. Trigger immediately for: - UI/Layout: Modals/dialogs/popovers, tables, dark mode, anchor positioning, container queries, `:has()`, etc. - Scroll/Motion: View Transitions, Scroll-driven animations, parallax/reveals, etc. - Performance: CWV (LCP, INP), content-visibility, Fetch Priority, image optimization, etc. - System/APIs: Security, passkeys, HTML sanitization, Web Components, dates/timezones, Built-in AI, WebAssembly, etc. - Frameworks: Standard HTML/CSS/DOM in React, Vue, Angular, etc. - General Frontend: Forms, validation (`:user-valid`), autofill, accessibility, custom selects, scrollbars, etc. DO NOT trigger for: - Backend: SQL, ORMs, API routes, etc. - Infra/Scripts: CI/CD, Docker, Actions, Python/Go, Git, etc. - Tooling/Trivial: Vite, tsconfig, ESLint, tests, copy/renames, 3P docs, etc.",
         "tags": [
           "modern",
           "web",
@@ -204,9 +278,22 @@
         "path": "/home/yash/.gemini/config/plugins/chrome-devtools-plugin/skills/debug-optimize-lcp/SKILL.md"
       },
       {
+        "name": "flutter-setup-declarative-routing",
+        "command": "/flutter-setup-declarative-routing",
+        "desc": "Configure `MaterialApp.router` using a package like `go_router` for advanced URL-based navigation. Use when developing web applications or mobile apps that require specific deep linking and browser history support.",
+        "tags": [
+          "flutter",
+          "setup",
+          "declarative",
+          "routing",
+          "skill"
+        ],
+        "path": "/home/yash/.gemini/config/plugins/flutter/skills/flutter-setup-declarative-routing/SKILL.md"
+      },
+      {
         "name": "memory-leak-debugging",
         "command": "/memory-leak-debugging",
-        "desc": "Diagnoses and resolves memory leaks in JavaScript/Node.js applications. Use when a user reports high memory usage, OOM errors, or wants to analyze heapsnapshots or run memory leak detection tools like memlab.",
+        "desc": "Diagnoses and resolves memory leaks in JavaScript/Node.js applications. Use when a user reports high memory usage, OOM errors, or wants to capture, compare, or inspect heap snapshots with Chrome DevTools MCP memory tools.",
         "tags": [
           "memory",
           "leak",
@@ -320,6 +407,18 @@
         "path": "/home/yash/.agents/skills/mcp-builder/SKILL.md"
       },
       {
+        "name": "retrieving-developer-knowledge",
+        "command": "/retrieving-developer-knowledge",
+        "desc": "Searches, retrieves, and synthesizes official Google developer documentation across Google Cloud, AI/Gemini, Android, Chrome, Web, Flutter, Go, Firebase, and other Google developer platforms. Integrates with the Developer Knowledge MCP server (search_documents, get_documents, answer_query) or the Developer Knowledge REST API fallback. Use when searching for gcloud CLI commands, API syntax, IAM permissions, official documentation, architectural comparisons, or product choice overviews. Don't use for local filesystem lookups or non-Google documentation.",
+        "tags": [
+          "retrieving",
+          "developer",
+          "knowledge",
+          "skill"
+        ],
+        "path": "/home/yash/.gemini/config/plugins/google-cloud-developer/skills/retrieving-developer-knowledge/SKILL.md"
+      },
+      {
         "name": "roblox",
         "command": "/roblox",
         "desc": "Complete Roblox game development and Roblox Studio suite. Covers Luau scripting, server-authoritative architecture, DataStores and persistence, character rigs, physics, ScreenGui, Studio MCP operations, anti-exploit security, and release optimization.",
@@ -423,6 +522,19 @@
           "skill"
         ],
         "path": "/home/yash/.agents/skills/design-system/SKILL.md"
+      },
+      {
+        "name": "flutter-add-widget-preview",
+        "command": "/flutter-add-widget-preview",
+        "desc": "Adds interactive widget previews to the project using the previews.dart system. Use when creating new UI components or updating existing screens to ensure consistent design and interactive testing.",
+        "tags": [
+          "flutter",
+          "add",
+          "widget",
+          "preview",
+          "skill"
+        ],
+        "path": "/home/yash/.gemini/config/plugins/flutter/skills/flutter-add-widget-preview/SKILL.md"
       },
       {
         "name": "frontend-design",
@@ -625,6 +737,16 @@
         "path": "/home/yash/.gemini/config/plugins/gcalendar/skills/gcalendar/SKILL.md"
       },
       {
+        "name": "gcloud",
+        "command": "/gcloud",
+        "desc": "Provides safety-critical validation, guardrails, and data reduction for gcloud CLI operations across Google Cloud Platform (GCP) services and infrastructure. Use when planning, generating, constructing, proposing, describing, or executing any gcloud CLI commands - including when answering questions about gcloud syntax, or formatting flags. Don't use when writing Google Cloud client library code or raw REST/gRPC API requests.",
+        "tags": [
+          "gcloud",
+          "skill"
+        ],
+        "path": "/home/yash/.gemini/config/plugins/google-cloud-developer/skills/gcloud/SKILL.md"
+      },
+      {
         "name": "gdocs",
         "command": "/gdocs",
         "desc": "Read, create, edit, and manage Google Docs. Use when the user shares a docs.google.com URL, asks to summarize or extract content from a doc, wants a doc drafted, edited, formatted, or commented on, wants tables, images, or smart chips inserted, wants markdown imported or synchronized with a doc, or wants a doc exported. Requires a known document ID \u2014 to find documents, use the gdrive skill from the Google Drive plugin; if it isn't installed, ask the user for the doc link. Don't use for Google Sheets, Slides, or Drive file management.",
@@ -786,6 +908,288 @@
   {
     "category": "\ud83d\udce6 Other Utilities",
     "skills": [
+      {
+        "name": "cookie-debugging",
+        "command": "/cookie-debugging",
+        "desc": "Uses Chrome DevTools MCP for inspecting, debugging, and testing cookies, session state, authentication issues, and cookie consent compliance. Use when diagnosing 401/403 errors, authentication redirects, session expiration, Cookie/Set-Cookie header issues, cookie banner consent conformance, or third-party cookie/SameSite/Partitioned cookie warnings.",
+        "tags": [
+          "cookie",
+          "debugging",
+          "skill"
+        ],
+        "path": "/home/yash/.gemini/config/plugins/chrome-devtools-plugin/skills/cookie-debugging/SKILL.md"
+      },
+      {
+        "name": "dart-add-unit-test",
+        "command": "/dart-add-unit-test",
+        "desc": "Write and organize unit tests for functions, methods, and classes using `package:test`. Use when creating new logic or fixing bugs to ensure code remains correct and regression-free.",
+        "tags": [
+          "dart",
+          "add",
+          "unit",
+          "test",
+          "skill"
+        ],
+        "path": "/home/yash/.gemini/config/plugins/flutter/skills/dart-add-unit-test/SKILL.md"
+      },
+      {
+        "name": "dart-build-cli-app",
+        "command": "/dart-build-cli-app",
+        "desc": "Architectural patterns, entrypoint structure, exit codes, stream routing, and subprocess spawning for Dart command-line interface (CLI) applications. Use when building CLI tools, console utilities, scripts, argument parsing with `package:args` (ArgParser or CommandRunner), handling exit codes, configuring executables in pubspec.yaml, spawning Dart subprocesses, or compiling native CLI binaries. Don't use for Flutter UI widgets, web applications, or standalone HTTP backend servers.",
+        "tags": [
+          "dart",
+          "build",
+          "cli",
+          "app",
+          "skill"
+        ],
+        "path": "/home/yash/.gemini/config/plugins/flutter/skills/dart-build-cli-app/SKILL.md"
+      },
+      {
+        "name": "dart-collect-coverage",
+        "command": "/dart-collect-coverage",
+        "desc": "Collect coverage using the coverage packge and create an LCOV report",
+        "tags": [
+          "dart",
+          "collect",
+          "coverage",
+          "skill"
+        ],
+        "path": "/home/yash/.gemini/config/plugins/flutter/skills/dart-collect-coverage/SKILL.md"
+      },
+      {
+        "name": "dart-fix-runtime-errors",
+        "command": "/dart-fix-runtime-errors",
+        "desc": "Uses get_runtime_errors and lsp to fetch an active stack trace, locate the failing line, apply a fix, and verify resolution via hot_reload.",
+        "tags": [
+          "dart",
+          "fix",
+          "runtime",
+          "errors",
+          "skill"
+        ],
+        "path": "/home/yash/.gemini/config/plugins/flutter/skills/dart-fix-runtime-errors/SKILL.md"
+      },
+      {
+        "name": "dart-generate-test-mocks",
+        "command": "/dart-generate-test-mocks",
+        "desc": "Define and generate mock objects for external dependencies using `package:mockito` and `build_runner`. Use when unit testing classes that depend on complex external services like APIs or databases.",
+        "tags": [
+          "dart",
+          "generate",
+          "test",
+          "mocks",
+          "skill"
+        ],
+        "path": "/home/yash/.gemini/config/plugins/flutter/skills/dart-generate-test-mocks/SKILL.md"
+      },
+      {
+        "name": "dart-migrate-to-checks-package",
+        "command": "/dart-migrate-to-checks-package",
+        "desc": "Replace the usage of `expect` and similar functions from `package:matcher` to `package:checks` equivalents.",
+        "tags": [
+          "dart",
+          "migrate",
+          "to",
+          "checks",
+          "package",
+          "skill"
+        ],
+        "path": "/home/yash/.gemini/config/plugins/flutter/skills/dart-migrate-to-checks-package/SKILL.md"
+      },
+      {
+        "name": "dart-resolve-package-conflicts",
+        "command": "/dart-resolve-package-conflicts",
+        "desc": "Workflow for fixing package version conflicts. Use this when `pub get` fails due to incompatible package versions.",
+        "tags": [
+          "dart",
+          "resolve",
+          "package",
+          "conflicts",
+          "skill"
+        ],
+        "path": "/home/yash/.gemini/config/plugins/flutter/skills/dart-resolve-package-conflicts/SKILL.md"
+      },
+      {
+        "name": "dart-run-static-analysis",
+        "command": "/dart-run-static-analysis",
+        "desc": "Execute `dart analyze` to identify warnings and errors, and use `dart fix --apply` to automatically resolve mechanical lint issues. Use during development to ensure code quality and before committing changes.",
+        "tags": [
+          "dart",
+          "run",
+          "static",
+          "analysis",
+          "skill"
+        ],
+        "path": "/home/yash/.gemini/config/plugins/flutter/skills/dart-run-static-analysis/SKILL.md"
+      },
+      {
+        "name": "dart-setup-ffi-assets",
+        "command": "/dart-setup-ffi-assets",
+        "desc": "Guides agents in compiling and packaging C/C++ source code into dynamic or static libraries (Code Assets) using Dart's Native Assets hook system (via hook/build.dart and hook/link.dart utilizing package:hooks and package:native_toolchain_c). Use when a user asks to: 'setup native assets', 'compile C/C++ source code', 'bundle dynamic libraries', 'build native C code', 'link native assets', 'implement build.dart or link.dart hooks', or 'integrate C/C++ interop in Dart/Flutter'. Helps agents avoid manual toolchain orchestration and configures secure hash-validated binary downloads or advanced linker tree-shaking with package:record_use mapping.",
+        "tags": [
+          "dart",
+          "setup",
+          "ffi",
+          "assets",
+          "skill"
+        ],
+        "path": "/home/yash/.gemini/config/plugins/flutter/skills/dart-setup-ffi-assets/SKILL.md"
+      },
+      {
+        "name": "dart-use-doc-examples",
+        "command": "/dart-use-doc-examples",
+        "desc": "How to inject external code examples into Dartdoc using the {@example} directive, and how to filter those files using #hide, #region, and #endregion tags.",
+        "tags": [
+          "dart",
+          "use",
+          "doc",
+          "examples",
+          "skill"
+        ],
+        "path": "/home/yash/.gemini/config/plugins/flutter/skills/dart-use-doc-examples/SKILL.md"
+      },
+      {
+        "name": "dart-use-ffigen",
+        "command": "/dart-use-ffigen",
+        "desc": "Guide agents to use `package:ffigen` to automatically generate FFI bindings instead of writing them manually. Use this skill when a task involves writing new FFI bindings, extending C/Objective-C/Swift integrations, or replacing hand-crafted `dart:ffi` setups.",
+        "tags": [
+          "dart",
+          "use",
+          "ffigen",
+          "skill"
+        ],
+        "path": "/home/yash/.gemini/config/plugins/flutter/skills/dart-use-ffigen/SKILL.md"
+      },
+      {
+        "name": "dart-use-path-package",
+        "command": "/dart-use-path-package",
+        "desc": "Cross-platform file and directory path manipulation, segment splitting, extension extraction, and context conversion using `package:path` and `package:file`. Use when writing, inspecting, joining, splitting, or refactoring file paths, directory names, or extensions, or replacing raw string path operations (`.split('/')`, `'$dir/$file'`, `.endsWith('.ext')`, `.replaceAll('\\\\', '/')`). Don't use for HTTP network URI routing, database query strings, or non-path string processing.",
+        "tags": [
+          "dart",
+          "use",
+          "path",
+          "package",
+          "skill"
+        ],
+        "path": "/home/yash/.gemini/config/plugins/flutter/skills/dart-use-path-package/SKILL.md"
+      },
+      {
+        "name": "dart-use-primary-constructors",
+        "command": "/dart-use-primary-constructors",
+        "desc": "Help users write syntactically and semantically correct primary constructors in Dart, and migrate/use the new constructor syntax, empty-body semicolon syntax, in-body initializer list syntax, and abbreviated concise constructor syntax.",
+        "tags": [
+          "dart",
+          "use",
+          "primary",
+          "constructors",
+          "skill"
+        ],
+        "path": "/home/yash/.gemini/config/plugins/flutter/skills/dart-use-primary-constructors/SKILL.md"
+      },
+      {
+        "name": "dart-write-documentation",
+        "command": "/dart-write-documentation",
+        "desc": "Rules and formatting guidelines for writing Dart /// API documentation and doc comments. Use when documenting Dart code, writing doc comments for any Dart declaration (libraries, classes, methods, variables, etc.), or when instructed to follow the Effective Dart documentation guidelines.",
+        "tags": [
+          "dart",
+          "write",
+          "documentation",
+          "skill"
+        ],
+        "path": "/home/yash/.gemini/config/plugins/flutter/skills/dart-write-documentation/SKILL.md"
+      },
+      {
+        "name": "flutter-add-integration-test",
+        "command": "/flutter-add-integration-test",
+        "desc": "Configures Flutter Driver for app interaction and converts MCP actions into permanent integration tests. Use when adding integration testing to a project, exploring UI components via MCP, or automating user flows with the integration_test package.",
+        "tags": [
+          "flutter",
+          "add",
+          "integration",
+          "test",
+          "skill"
+        ],
+        "path": "/home/yash/.gemini/config/plugins/flutter/skills/flutter-add-integration-test/SKILL.md"
+      },
+      {
+        "name": "flutter-apply-architecture-best-practices",
+        "command": "/flutter-apply-architecture-best-practices",
+        "desc": "Architects a Flutter application using the recommended layered approach (UI, Logic, Data). Use when structuring a new project or refactoring for scalability.",
+        "tags": [
+          "flutter",
+          "apply",
+          "architecture",
+          "best",
+          "practices",
+          "skill"
+        ],
+        "path": "/home/yash/.gemini/config/plugins/flutter/skills/flutter-apply-architecture-best-practices/SKILL.md"
+      },
+      {
+        "name": "flutter-build-responsive-layout",
+        "command": "/flutter-build-responsive-layout",
+        "desc": "Use `LayoutBuilder`, `MediaQuery`, or `Expanded/Flexible` to create a layout that adapts to different screen sizes. Use when you need the UI to look good on both mobile and tablet/desktop form factors.",
+        "tags": [
+          "flutter",
+          "build",
+          "responsive",
+          "layout",
+          "skill"
+        ],
+        "path": "/home/yash/.gemini/config/plugins/flutter/skills/flutter-build-responsive-layout/SKILL.md"
+      },
+      {
+        "name": "flutter-setup-localization",
+        "command": "/flutter-setup-localization",
+        "desc": "Add `flutter_localizations` and `intl` dependencies, enable \\\"generate true\\\" in `pubspec.yaml`, and create an `l10n.yaml` configuration file. Use when initializing localization support for a new Flutter project.",
+        "tags": [
+          "flutter",
+          "setup",
+          "localization",
+          "skill"
+        ],
+        "path": "/home/yash/.gemini/config/plugins/flutter/skills/flutter-setup-localization/SKILL.md"
+      },
+      {
+        "name": "flutter-use-http-package",
+        "command": "/flutter-use-http-package",
+        "desc": "Use the `http` package to execute GET, POST, PUT, or DELETE requests. Use when you need to fetch from or send data to a REST API.",
+        "tags": [
+          "flutter",
+          "use",
+          "http",
+          "package",
+          "skill"
+        ],
+        "path": "/home/yash/.gemini/config/plugins/flutter/skills/flutter-use-http-package/SKILL.md"
+      },
+      {
+        "name": "google-cloud-recipe-auth",
+        "command": "/google-cloud-recipe-auth",
+        "desc": "Provides expert guidance on Identity and Access Management (IAM) and authenticating and authorizing to Google Cloud services and APIs, covering human users, service identities, Application Default Credentials (ADC), and best practices for secure access.",
+        "tags": [
+          "google",
+          "cloud",
+          "recipe",
+          "auth",
+          "skill"
+        ],
+        "path": "/home/yash/.gemini/config/plugins/google-cloud-developer/skills/google-cloud-recipe-auth/SKILL.md"
+      },
+      {
+        "name": "google-cloud-recipe-onboarding",
+        "command": "/google-cloud-recipe-onboarding",
+        "desc": "Guides a developer's first steps on Google Cloud, covering account creation, billing setup, project management, and deploying a first resource. Use when a new developer wants to initialize their first Google Cloud project, configure billing, and verify deployment. Don't use for enterprise organization setup (use Google Cloud Setup guided flow for that instead). Don't use for complex multi-project architectures.",
+        "tags": [
+          "google",
+          "cloud",
+          "recipe",
+          "onboarding",
+          "skill"
+        ],
+        "path": "/home/yash/.gemini/config/plugins/google-cloud-developer/skills/google-cloud-recipe-onboarding/SKILL.md"
+      },
       {
         "name": "migrate-workflows",
         "command": "/migrate-workflows",

@@ -9,6 +9,15 @@
 > **The definitive skill discovery, import, consolidation, and slide-out navigation engine for Google Antigravity (Antigravity 2.0 / Antigravity IDE).**  
 > Browse all installed skills from an integrated sidebar drawer, automatically import skills from GitHub or Obsidian, and consolidate multi-skill suites with zero loss of prompt rules.
 
+<p align="center">
+  <img src="assets/showcase.gif" alt="Antigravity Skills Hub Interactive Showcase" width="100%" />
+</p>
+
+<p align="center">
+  <a href="assets/showcase.mp4">▶️ <b>Watch 17s High-Definition Video (1080p with Audio)</b></a> &nbsp;•&nbsp; 
+  <a href="assets/showcase-60s-luxury.mp4">✨ <b>Watch 60s Extended Luxury Edition</b></a>
+</p>
+
 ---
 
 ## 📸 Visual Showcase
